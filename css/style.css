@@ -9651,30 +9651,3 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
-.whatsapp-chat {
-  position: fixed;
-  bottom: 20px; /* Distancia desde la parte inferior */
-  left: 20px;   /* Distancia desde el lado izquierdo */
-  width: 60px;  /* Ancho del botón */
-  height: 60px; /* Alto del botón */
-  background-color: #25d366; /* Color oficial de WhatsApp */
-  border-radius: 50%; /* Hace que el botón sea circular */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-chat:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.whatsapp-chat::before {
-  content: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'); /* Icono oficial */
-  width: 30px; /* Tamaño del icono */
-  height: 30px;
-}

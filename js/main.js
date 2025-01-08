@@ -110,12 +110,7 @@
         ],
     });
 
-    function startWhatsAppChat() {
-        const phoneNumber = "56928195264"; // Cambia este número por el tuyo (incluye el código de país sin + ni espacios)
-        const message = "¡Hola! Me gustaría hacer una consulta."; // Mensaje inicial
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank'); // Abre WhatsApp en una nueva pestaña
-    }
+  
     
 })(jQuery);
 
