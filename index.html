@@ -70,7 +70,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4><img class="img-fluid mb-4 mb-lg-0" src="img/logo.png" alt=""></h4>
                             <h3 class="display-2 font-secondary text-white mb-4">¡Sé parte de la transición energética hoy!</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Escríbenos</a>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="cotizacion.html">Cotiza con Nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                             <h4><img class="img-fluid mb-4 mb-lg-0" src="img/logo.png" alt=""></h4>
                             
                             <h3 class="display-2 font-secondary text-white mb-4">¡Sé parte de la transición energética hoy!</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Escríbenos</a>
+                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="cotizacion.html">Cotiza con Nosotros</a>
                         </div>
                     </div>
                 </div>
@@ -367,123 +367,6 @@
     </div>
     <!-- Gallery End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contacto</h6>
-                <h1 class="font-secondary display-4">Escríbenos</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form">
-                        <form id="contactForm" onsubmit="return enviarConMailto();">
-                            <div class="form-row">
-                                <div class="col-sm-6 control-group">
-                                    <input 
-                                        type="text" 
-                                        class="form-control bg-secondary border-0 py-4 px-3" 
-                                        id="name" 
-                                        placeholder="Tu Nombre" 
-                                        required />
-                                    <p class="help-block text-danger" id="nameError"></p>
-                                </div>
-                                <div class="col-sm-6 control-group">
-                                    <input 
-                                        type="email" 
-                                        class="form-control bg-secondary border-0 py-4 px-3" 
-                                        id="email" 
-                                        placeholder="Tu Correo" 
-                                        required />
-                                    <p class="help-block text-danger" id="emailError"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input 
-                                    type="text" 
-                                    class="form-control bg-secondary border-0 py-4 px-3" 
-                                    id="subject" 
-                                    placeholder="Asunto" 
-                                    required />
-                                <p class="help-block text-danger" id="subjectError"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea 
-                                    class="form-control bg-secondary border-0 py-2 px-3" 
-                                    rows="6" 
-                                    id="message" 
-                                    placeholder="Mensaje" 
-                                    required></textarea>
-                                <p class="help-block text-danger" id="messageError"></p>
-                            </div>
-                            <div class="control-group text-center mt-4">
-                                <button type="submit" class="btn btn-primary py-3 px-5">Enviar Mensaje</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        function enviarConMailto() {
-            // Obtiene los valores de los campos del formulario
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
-    
-            let isValid = true;
-    
-            // Validación de nombre
-            if (!name) {
-                document.getElementById('nameError').textContent = 'Por favor, ingresa tu nombre.';
-                isValid = false;
-            } else {
-                document.getElementById('nameError').textContent = '';
-            }
-    
-            // Validación de correo
-            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                document.getElementById('emailError').textContent = 'Por favor, ingresa un correo válido.';
-                isValid = false;
-            } else {
-                document.getElementById('emailError').textContent = '';
-            }
-    
-            // Validación de asunto
-            if (!subject) {
-                document.getElementById('subjectError').textContent = 'Por favor, ingresa un asunto.';
-                isValid = false;
-            } else {
-                document.getElementById('subjectError').textContent = '';
-            }
-    
-            // Validación de mensaje
-            if (!message) {
-                document.getElementById('messageError').textContent = 'Por favor, escribe tu mensaje.';
-                isValid = false;
-            } else {
-                document.getElementById('messageError').textContent = '';
-            }
-    
-            // Si no pasa la validación, no envía el correo
-            if (!isValid) {
-                return false;
-            }
-    
-            // Crea el enlace mailto
-            const mailtoLink = `mailto:j.contreras@aconcaguagreen.cl? subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-                `Mensaje:\n${message}\n\nDe: ${name}\nCorreo: ${email}`
-            )}`;
-    
-            // Redirige al enlace mailto
-            window.location.href = mailtoLink;
-            return false; // Evita que se envíe el formulario de forma tradicional
-        }
-    </script>
-
 <title>Chat WhatsApp</title>
 <style>
     .whatsapp-chat {
@@ -513,25 +396,41 @@
         width: 30px;
         height: 30px;
     }
-</style>
-</head>
-<body>
-<div class="whatsapp-chat" onclick="startWhatsAppChat()"></div>
+    </style>
+    </head>
+    <body>
+    <div class="whatsapp-chat" onclick="startWhatsAppChat()"></div>
 
-<script>
+    <script>
     function startWhatsAppChat() {
         const phoneNumber = "56928195264"; // Cambia este número por el tuyo
         const message = "¡Hola! Me gustaría hacer una consulta.";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     }
-</script>
-    <!-- Contact End -->
-
+    </script>
+   
+        <!-- Botón Volver al inicio -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="cotizacion.html">
+                   <button style="background-color: white; color: #324968; border: 5px solid #324968; border-radius: 50px; padding: 20px 70px; font-size: 20px; cursor: pointer; transition: all 0.3s ease;  margin-bottom: 90px">
+                        Cotiza con Nosotros
+                   </button>
+           </a>
+       </div>
+   
+       <style>
+       
+            button:hover {
+            background-color: #324968; /* Cambia el fondo a #324968 */
+            color: rgb(255, 238, 0); /* Cambia el color del texto a blanco */
+            border-color: #fae900; /* Cambia el color del borde a un tono más oscuro */
+       }
+       </style>
 
     <!-- Footer Start -->
 
-    <footer class="bg-dark text-white pt-5 pb-4">
+    <footer class="bg-dark text-white pt-5 pb-4" id="contact">
         <div class="container">
             <div class="row">
                 <!-- Columna: Logo y descripción -->

@@ -9646,8 +9646,6 @@ h4, h5, h6 {
   background: #009CFF;
 }
 
-.contact-form .help-block ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+footer {
+  margin-bottom: 20px; /* Separa el footer de la parte inferior */
 }
