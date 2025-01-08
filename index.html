@@ -170,48 +170,190 @@
 
 
     <!-- Gallery Start -->
+    <style>
+        .gallery-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            border: 3px solid #fff;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .gallery-description {
+            padding-top: 10px;
+            text-align: center;
+        }
+        .owl-nav button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .owl-nav button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Optional: center the gallery carousel */
+        .owl-carousel {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
     <div class="container-fluid bg-gallery" id="project" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Projectos</h6>
-            <h1 class="font-secondary display-4 text-white">Algunos de Nuestros Projectos Ejecutados</h1>
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Proyectos</h6>
+            <h1 class="font-secondary display-4 text-white">Algunos de Nuestros Proyectos Ejecutados</h1>
         </div>
         <div class="owl-carousel gallery-carousel">
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-1.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/1.jpeg" alt="Proyecto 1">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Colegio Farellones 60 kWp, Santiago, Región Metropolitana.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/1xl.jpg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-2.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/2.jpeg" alt="Proyecto 2">
+                <div class="gallery-description">
+                    <p class="text-white">Car Port, 150 kWp / 3 estacionamientos solar Comuna de Colina, Región Metropolitana.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/2xl.jpg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-3.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/3.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Cervecería Kross, 300 kWp Comuna de Curacaví, Región Metropolitana.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/3xl.jpg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-4.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/4.jpg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Nueva Imperial SAESA, 700 kWp Región de la Araucanía.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/4xl.jpg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-5.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/10.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Colegio Lo Barnechea Santiago 40 kWp Región Metropolitanaa.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/10.jpeg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a class="btn btn-primary" href="img/gallery-6.jpg" data-lightbox="gallery">
+                <img class="img-fluid w-100" src="img/12.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Líder San Fernando, 300 kWp San Fernando. Región del Lib.  Gral. Bernardo O'Higgins.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/12.jpeg" data-lightbox="gallery">
                     <i class="fa fa-1x fa-plus text-white"></i>
                 </a>
             </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/7.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Pocochay, Las Vegas 300 kWp Llay Llay, región de Valparaíso.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/7xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/8.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Carahue SAESA, 800 kWp Región de la Araucanía.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/8xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/9.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Carahue SAESA, 800 kWp Región de la Araucanía.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/9xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/10.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Fundo las Mercedes, 300 kWp Cabildo, región de Valparaíso.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/10xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/11.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Fundo San Nicolás, 300 kWp Calle Larga, región de Valparaíso.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/11xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/12.jpeg" alt="Proyecto 3">
+                <div class="gallery-description">
+                    <p class="text-white">Proyecto Valle de Chile, 90 kWp Comuna de Llay Llay, región de Valparaíso.</p>
+                </div>
+                <!-- Enlace con lightbox para abrir la imagen en grande -->
+                <a href="img/12xl.jpg" data-lightbox="gallery">
+                    <i class="fa fa-1x fa-plus text-white"></i>
+                </a>
+            </div>
+            <!-- Añadir más elementos de galería aquí -->
+        </div>
+    </div>
+
+<!-- Agregar scripts para Owl Carousel y Lightbox -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            navText: [
+                "<i class='fa fa-arrow-left'></i>", // Flecha izquierda
+                "<i class='fa fa-arrow-right'></i>" // Flecha derecha
+            ],
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+    });
+</script>
+            <!-- Agregar más imágenes según sea necesario -->
         </div>
     </div>
     <!-- Gallery End -->
@@ -323,7 +465,7 @@
             }
     
             // Crea el enlace mailto
-            const mailtoLink = `mailto:j.contreras@acancaguagreen.cl? subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            const mailtoLink = `mailto:j.contreras@aconcaguagreen.cl? subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
                 `Mensaje:\n${message}\n\nDe: ${name}\nCorreo: ${email}`
             )}`;
     
@@ -392,7 +534,9 @@
                     <div class="col-md-4">
                         <div class="text-md-center">
                             <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Mail</h5>
-                            <p class="mb-4 m-md-0"><a href="mailto:j.contreras@aconcaguagreen.cl"target="_blank">j.contreras@acancaguagreen.cl</a></p>
+                            <p class="mb-4 m-md-0">
+                                <a href="mailto:j.contreras@aconcaguagreen.cl">j.contreras@aconcaguagreen.cl</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -420,13 +564,10 @@
         </div>
     </div>
     <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .05) !important;">
-        <p class="m-0 text-white">&copy; <a href="#" target="_blank">Aconcagua Green</a>. Todos los Derechos Reservados. Designed by <a href="#" arget="_blank">MTech Servicios Informáticos</a></p>
+        <p class="m-0 text-white">&copy; <a href="#" target="_blank">Aconcagua Green</a>. Todos los Derechos Reservados. Designed by <a href="#" target="_blank">MTech Servicios Informáticos</a></p>
     </div>
 
      <!-- Footer End -->
-
-     
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
